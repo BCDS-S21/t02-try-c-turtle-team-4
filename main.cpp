@@ -1,6 +1,6 @@
  /* File:   main_CTurtle.cpp
  * Original Author:  Jesse W. Walker with modifications by Jan Pearce, 2019
- * Modified by: FIXME
+ * Modified by: Yryskeldi Emilbek uulu, Kylea Hughes, Robert Dabbs
  */
 
 #include "CTurtle.hpp";   //This brings in the CTurtle library for use
@@ -16,21 +16,37 @@ int main() {
 	ct::Turtle turtle(scr);
 
 	turtle.speed(ct::TS_SLOWEST);
-	turtle.fillcolor({ "purple" });
-	turtle.begin_fill();
-	for (int i = 0; i < 4; i++) {
-		turtle.forward(50);
-		turtle.right(90);
-	}
+  
+  turtle.fillcolor({"black"});
+  turtle.begin_fill();
+  turtle.right(60);
+
+  for (int i = 0; i <= 2; i++) {
+    turtle.forward(100);
+    turtle.right(120);
+  }
+  
+  turtle.left(30);
+  turtle.forward(100);
+
+  for (int i=0; i <= 2; i++) {
+    turtle.right(120);
+    turtle.forward(100);
+  }
+
+  turtle.right(120);
+  turtle.forward(50);
+
 	turtle.end_fill();
 	turtle.penup();
 	turtle.hideturtle();
 	turtle.forward(100);
 	turtle.pendown();
 	turtle.fillcolor({ "blue" });
-	turtle.write("I love Data Structures!");
+	turtle.write("Plane!");
 
 
 	scr.exitonclick();  //exists graphics screen
 	return 0;
 }
+

@@ -2,7 +2,7 @@
 # T02: Try C-Turtle
 
 ### Author:
-- Authors: FIXME
+- Authors: Kylea Hughes, Robert Dabbs, Yryskeldi Emilbek uulu
 - Author of [C-Turtle](https://github.com/walkerje/C-Turtle): Jesse W. Walker
 
 ## Use C-turtle to create something!
